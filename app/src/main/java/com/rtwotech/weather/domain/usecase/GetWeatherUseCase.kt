@@ -4,6 +4,6 @@ import com.rtwotech.weather.domain.repository.WeatherRepository
 
 class GetWeatherUseCase (private val weatherRepository: WeatherRepository){
 
-    fun getWeather(cityName: String?, lat: Double?, lon: Double?) =
+    suspend fun getWeather(cityName: String?, lat: Double?, lon: Double?) =
         weatherRepository.getWeather(cityName, lat, lon)
 }

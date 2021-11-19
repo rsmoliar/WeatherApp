@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Weather</string>
+    <string name="current_location_unknown">Current location: Unknown</string>
+    <string name="current_location">Current location: lat %f *** lon %f</string>
+    <string name="get_weather">Get weather</string>
 </resources>

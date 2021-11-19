@@ -1,8 +1,9 @@
 package com.rtwotech.weather.domain.repository
 
 import com.rtwotech.weather.domain.model.Weather
+import com.rtwotech.weather.util.Resource
 
 interface WeatherRepository {
 
-    fun getWeather(cityName: String?, lat: Double?, lon: Double?): Weather
+    suspend fun getWeather(cityName: String?, lat: Double?, lon: Double?): Resource<Weather>
 }
